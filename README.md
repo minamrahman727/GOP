@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Government of Pakistan – Official National Portal 
 
-## Getting Started
+🌐 Live Site: [govtofpakistan.vercel.app](https://govtofpakistan.vercel.app)
 
-First, run the development server:
+This project is the **official frontend redesign of the Government of Pakistan's national portal**, developed with modern web standards for performance, accessibility, and citizen-centric interaction.
+
+Commissioned by the **Government of Pakistan**, this portal reflects the digital transformation vision of the state, offering a responsive, efficient, and secure experience for the public.
+
+---
+
+## 📌 Objective
+
+To provide a **high-performance, accessible, and mobile-first** experience for all users accessing government information online — unifying federal ministries, departments, provinces, key leadership, and institutions under a single interactive platform.
+
+This redesign ensures:
+- **Trustworthy national branding**
+- **Scalability for future services**
+- **Ease of access for all citizens and visitors**
+
+---
+
+## 🧰 Technology Stack
+
+| Layer           | Technology               |
+|----------------|---------------------------|
+| Framework       | [Next.js](https://nextjs.org/) (App Router) |
+| Styling         | [Tailwind CSS](https://tailwindcss.com/)     |
+| Animation       | [Framer Motion](https://framer.com/motion)   |
+| Language        | TypeScript                |
+| Deployment      | [Vercel](https://vercel.com/)                |
+
+---
+
+## 🏛 Portal Structure
+
+| Route                        | Purpose                                                       |
+|-----------------------------|---------------------------------------------------------------|
+| `/`                         | Homepage: National identity, stats, ministries, judiciary     |
+| `/government`               | Government portal index                                       |
+| `/government/ministry`      | Interactive list of federal ministries (with modals)          |
+| `/government/provinces`     | Showcase of all provinces and territories                     |
+| `/government/departments`   | Overview of key departments and divisions                     |
+| `/contact`                  | Official contact page with verified government info           |
+| `/not-found`                | Custom 404 error page with national visual design             |
+
+---
+
+## 🧩 Key Modules
+
+- `Hero.tsx` – Government branding and top-level message
+- `Navbar.tsx` & `Footer.tsx` – Persistent site-wide navigation and national footer
+- `Stats.tsx` – Live animated statistical counters
+- `KeyRoles.tsx` – President, Prime Minister, and national offices
+- `Judiciary.tsx` – Overview of judicial system
+- `Security.tsx` – Security, law enforcement, and intelligence agencies
+- `Ministry.tsx`, `Provinces.tsx`, `Departments.tsx` – Government bodies directory
+
+---
+
+## 📱 Accessibility & UX Principles
+
+- ✅ Mobile-first and fully responsive (from 320px to 4K screens)
+- ✅ High contrast, readable fonts, and accessible color palette
+- ✅ Keyboard navigation and screen reader support
+- ✅ Fast load times with static rendering and code splitting
+- ✅ Urdu/English-ready structure (future implementation)
+
+---
+
+## 🚀 Local Setup (Development Mode)
 
 ```bash
+# Clone the official repository
+git clone https://github.com/minamrahman727/GOP.git
+cd GOP
+
+# Install dependencies
+npm install
+
+# Start the local server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
