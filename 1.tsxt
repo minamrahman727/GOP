@@ -1,0 +1,59 @@
+your-project/
+├── app/
+│   ├── layout.tsx                 # Root layout with Navbar/Footer
+│   ├── page.tsx                   # Homepage
+│   ├── ministries/
+│   │   └── page.tsx               # Ministries listing
+│   ├── downloads/
+│   │   └── page.tsx               # Documents/Downloads
+│   ├── press-releases/
+│   │   └── page.tsx               # Press releases, media updates
+│   ├── contact/
+│   │   └── page.tsx               # Contact page with form
+│   └── not-found.tsx             # Optional: Custom 404
+│
+├── components/
+│   ├── Navbar.tsx  -               # Top navbar (responsive)
+│   ├── Footer.tsx                 # Footer section
+│   ├── HeroSection.tsx -          # Hero/banner for homepage
+│   ├── StatsSection.tsx          # Animated stats section
+│   ├── MinistryCard.tsx -         # Card for ministry info
+│   ├── ProvinceCard.tsx -         # Card for province info
+│   ├── DocumentList.tsx          # Document list with download icons
+│   ├── AnnouncementCard.tsx      # Press release/news card
+│   ├── SearchBar.tsx             # Optional search input
+│   ├── ContactForm.tsx           # Contact form component
+│   └── LanguageSwitcher.tsx      # Urdu/English toggle
+│
+├── lib/
+│   ├── data.ts                    # Static data (ministries, provinces)
+│   ├── utils.ts                   # Helper functions
+│   └── constants.ts               # App-wide constants (URLs, colors)
+│
+├── public/
+│   ├── logo.png                   # Logo or emblem
+│   └── assets/                    # Optional: PDFs, images, icons
+│
+├── styles/
+│   └── globals.css                # Tailwind base styles
+│
+├── tailwind.config.ts            # Tailwind config
+├── postcss.config.js             # PostCSS config
+├── tsconfig.json                 # TypeScript config
+├── next.config.js                # Next.js config
+├── package.json                  # NPM packages
+└── README.md                     # Project overview
+app/
+├── government/
+│   ├── page.tsx               // Main Government page
+│   ├── ministry/
+│   │   └── page.tsx           // Ministry page
+│   ├── provinces/
+│   │   └── page.tsx           // Provinces page
+│   └── departments/
+│       └── page.tsx           // Departments page
+components/
+└── govt/
+    ├── Ministry.tsx
+    ├── Provinces.tsx
+    └── Departments.tsx
